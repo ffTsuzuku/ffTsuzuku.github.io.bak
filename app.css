@@ -6,28 +6,59 @@
 
 .landingPage {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-image: url("bg.jpg");
     background-position: center;
 }
 
 .logo {
-    margin-right: 100px;
-    height: 250px;
-    width: 250px;
+    height: 100px;
+    width: 100px;
 }
 
-.name {
+.fontSize {
+    font-size: 3rem;    
+}
+
+
+.roboto {
     font-family: 'Roboto', sans-serif;
-    font-size: 5rem;    
-    color: white;
 }
 
 .flex {
     display: flex;
 }
 
+.flexWrap {
+    flex-wrap: wrap;
+}
+
 .justifyCenter {
     justify-content: center;
 }
 
+.white {
+    color: white;
+}
+
+.yellow {
+    color: #FFE9B1;
+}
+
+.bio {
+    margin: 0px 20px 0px 20px;
+}
+
+
+.centerText {
+    text-align: center;
+}
+
+.pillButton {
+    border: 3px solid white;
+    border-radius: 90px;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    margin: auto 0px auto 0px;
+}
