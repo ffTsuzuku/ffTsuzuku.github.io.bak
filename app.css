@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.landingPage {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("bg.jpg");
+    background-position: center;
+}
+
+.logo {
+    margin-right: 100px;
+    height: 250px;
+    width: 250px;
+}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;    
+    color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
