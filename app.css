@@ -3,12 +3,20 @@
     margin: 0px;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 .landingPage {
     height: 100vh;
     width: 100%;
     background-image: url("bg.jpg");
     background-position: center;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 20% 25% 30% 1fr;
+    gap: 20px;
+    min-width: 360px;
 }
 
 .logo {
@@ -16,17 +24,21 @@
     width: 100px;
 }
 
-.fontSize {
-    font-size: 3rem;    
-}
-
-
 .roboto {
     font-family: 'Roboto', sans-serif;
 }
 
 .flex {
     display: flex;
+}
+
+.nameAndTitle {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-size: 2rem;
+    justify-items: center;
+    max-width: 100%;
 }
 
 .flexWrap {
@@ -45,20 +57,44 @@
     color: #FFE9B1;
 }
 
-.bio {
+.summary {
     margin: 0px 20px 0px 20px;
-}
-
-
-.centerText {
-    text-align: center;
+    font-size: 15px;
+    max-width: 100%;
 }
 
 .pillButton {
-    border: 3px solid white;
+    display: flex;
+    border: 4px solid white;
     border-radius: 90px;
     height: 50px;
     width: 150px;
-    text-align: center;
-    margin: auto 0px auto 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.landingButtons {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.bio {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 15px;
+}
+
+.scrollDown {
+    height: 60px;
+    width: 60px;
+}
+
+.m-20 {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    .landingPage {
+        grid-template-columns: .3fr 1fr;
+    }
 }
