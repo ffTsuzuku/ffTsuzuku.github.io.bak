@@ -17,6 +17,8 @@ body {
     grid-template-rows: 20% 25% 30% 1fr;
     gap: 20px;
     min-width: 360px;
+    padding-top: 10%;
+    
 }
 
 .logo {
@@ -76,15 +78,18 @@ body {
 .landingButtons {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    border: 3px solid red;
 }
 
 .bio {
+    border: 3px solid pink;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 15px;
 }
 
 .scrollDown {
+    border: 3px solid white;
     height: 60px;
     width: 60px;
 }
@@ -96,5 +101,44 @@ body {
 @media screen and (min-width: 600px) {
     .landingPage {
         grid-template-columns: .3fr 1fr;
+    }
+
+    .summary {
+        width: 400px;
+        font-size: 25px;
+    }
+
+    .nameAndTitle {
+        font-size: 4rem;
+    }
+
+    .landingButtons {
+        grid-column-start: 2;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+
+    .landingPage {
+        grid-template-rows: 1fr .5fr 1fr;
+    }
+    
+    .scrollDown {
+        grid-column-start: 2;
+    }
+
+    .pillButton {
+        width: 200px;
+        font-size: 25px;
+    }
+
+    @media screen and (min-width: 1000px) {
+        .logo {
+            width: 100%;
+            border: 4px solid green;
+        }
+
+        .landingPage {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }
