@@ -3,142 +3,170 @@
     margin: 0px;
 }
 
-body {
-    overflow-x: hidden;
+.pillButton {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 121px;
+    height: 43px;
+    border: 4px solid white;
+    border-radius: 90px;
+}
+
+.pillButton:hover {
+    background-color: red;
+    border-color: red;
+}
+
+.pillLabel {
+    align-self: center;
 }
 
 .landingPage {
-    height: 100vh;
-    width: 100%;
-    background-image: url("bg.jpg");
-    background-position: center;
     display: grid;
-    justify-items: center;
-    grid-template-rows: 20% 25% 30% 1fr;
-    gap: 20px;
-    min-width: 360px;
-    padding-top: 10%;
-    
+    grid-template-rows: 1fr .2fr .3fr;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 30px;
+    row-gap: 15px;
+}
+
+.logoAndBio {
+    display: grid;
+    justify-self: center;
+    grid-template-rows: 1fr 1fr;
 }
 
 .logo {
-    height: 100px;
-    width: 100px;
+    justify-self: center;
+    width: 200px;
+    height: 200px;
 }
 
-.roboto {
-    font-family: 'Roboto', sans-serif;
-}
-
-.flex {
-    display: flex;
+.bio {
+    display: grid;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-self: center;
+    grid-template-rows: 1fr 1fr;
 }
 
 .nameAndTitle {
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
-    font-size: 2rem;
-    justify-items: center;
-    max-width: 100%;
+    justify-self: center;
+    font-family: 'Roboto';
+    font-size: 30px;
 }
 
-.flexWrap {
-    flex-wrap: wrap;
-}
-
-.justifyCenter {
-    justify-content: center;
-}
-
-.white {
+.name {
+    width: 100%;
     color: white;
+    font-weight: bold;
 }
 
-.yellow {
+.title {
     color: #FFE9B1;
+    font-weight: bold;
 }
 
 .summary {
-    margin: 0px 20px 0px 20px;
-    font-size: 15px;
-    max-width: 100%;
-}
-
-.pillButton {
-    display: flex;
-    border: 4px solid white;
-    border-radius: 90px;
-    height: 50px;
-    width: 150px;
-    align-items: center;
-    justify-content: center;
+    color: white;
+    justify-self: center;
+    width: 80%;
+    font-weight: 100;
+    font-size: 20px
 }
 
 .landingButtons {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    border: 3px solid red;
-}
-
-.bio {
-    border: 3px solid pink;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 15px;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
 }
 
 .scrollDown {
-    border: 3px solid white;
-    height: 60px;
     width: 60px;
+    height: 60px;
+    justify-self: center;
+    margin-top: auto;   
 }
 
-.m-20 {
-    margin-top: 20px;
-}
-
-@media screen and (min-width: 600px) {
-    .landingPage {
-        grid-template-columns: .3fr 1fr;
+@media only screen and (min-width: 720px) {
+    .summary {
+        width: 45%;
     }
 
     .summary {
-        width: 400px;
-        font-size: 25px;
+        font-size: 30px;
+        width: 80%
     }
 
-    .nameAndTitle {
-        font-size: 4rem;
+    .name {
+        font-size: 70px;
     }
 
-    .landingButtons {
-        grid-column-start: 2;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 30px;
-    }
-
-    .landingPage {
-        grid-template-rows: 1fr .5fr 1fr;
-    }
-    
-    .scrollDown {
-        grid-column-start: 2;
+    .title {
+        font-size: 50px;
     }
 
     .pillButton {
-        width: 200px;
-        font-size: 25px;
+        width: 300px;
+        height: 100px;
+        cursor: pointer;
     }
 
-    @media screen and (min-width: 1000px) {
-        .logo {
-            width: 100%;
-            border: 4px solid green;
-        }
+    .pillLabel {
+        font-size: 35px;
+        font-weight: bold;
+    }
+}
 
-        .landingPage {
-            grid-template-columns: 1fr 1fr;
-        }
+@media only screen and (min-width: 920px) {
+    .landingPage {
+        grid-template-rows: .3fr .2fr .3fr;
+    }
+
+    .logoAndBio {
+        justify-content: center;
+        grid-template-columns: .4fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 30px;
+    }
+
+    .logo {
+        justify-self: right;
+    }
+
+    .nameAndTitle {
+        justify-self: left;
+    }
+
+    .summary {
+        justify-self: left;
+        width: 600px;
+    }
+
+    .pillButton {
+        width: 300px;
+        height: 100px;
+        cursor: pointer;
+    }
+
+    .pillLabel {
+        font-size: 35px;
+        font-weight: bold;
+    }
+}
+
+
+@media only screen and (min-height: 900px) {
+    .scrollDown {
+        margin-top: 10%;   
+    }
+
+    .logoAndBio {
+        margin-top: 10%;
     }
 }
