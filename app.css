@@ -259,6 +259,50 @@
     height: 40px;
 }
 
+.education {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 80px 10px 80px 10px;
+    row-gap: 30px;
+}
+
+.schools {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    row-gap: 30px;
+}
+
+.school {
+    display: grid;
+    width: 300px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    justify-self: center;
+    font-family: 'Roboto';
+}
+
+.schoolLogo {
+    width: 100%;
+}
+
+.degree {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    grid-auto-rows: auto;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.schoolName {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.degreeType {
+    font-weight: bold;
+}
+
 @media only screen and (min-width: 720px) {
     .summary {
         width: 45%;
@@ -294,6 +338,11 @@
     }
 
     .skills .content {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .schools {
+        display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
