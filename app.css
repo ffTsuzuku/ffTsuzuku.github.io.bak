@@ -3,6 +3,9 @@
     margin: 0px;
 }
 
+.green {
+    color: #137E71;
+}
 .pillButton {
     display: flex;
     justify-content: center;
@@ -20,6 +23,19 @@
 
 .pillLabel {
     align-self: center;
+}
+
+.pageHeader {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr;
+}
+
+.pageTitle {
+    font-family: 'Roboto';
+    font-size: 35px;
+    font-weight:bold;
+    margin-left: 10px;
 }
 
 .landingPage {
@@ -91,6 +107,62 @@
     height: 60px;
     justify-self: center;
     margin-top: auto;   
+}
+
+.workExperience {
+    display: grid;
+    grid-template-rows: 4;
+    row-gap: 5%;
+    background-color: #FAFAFA;
+    padding-top: 50px;
+}
+
+.smallFA {
+    font-size: 40px !important;
+    border-radius: 90px;
+    padding: 10px;
+}
+
+.smallFaIcon {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    width: 60px;
+    height: 60px;
+    border: 3px solid black;
+    border-radius: 90px;
+    align-items: center;
+}
+
+.experience {
+    display: grid;
+    font-family: 'Roboto';
+    border: 2px solid black;
+}
+
+.companyName {
+    font-size: 25px;
+    font-weight: bold;
+    justify-self: center;
+}
+
+.companyTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.titleAndDuration {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.duration {
+    font-size: 20px;
+}
+
+.jobSummary {
+    margin-top: 10px;
 }
 
 @media only screen and (min-width: 720px) {
