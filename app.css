@@ -44,6 +44,10 @@
     margin: 30px;
 }
 
+.noStyleLink {
+    text-decoration: none;
+}
+
 .card {
     display: grid;
     grid-template-columns: 1fr;
