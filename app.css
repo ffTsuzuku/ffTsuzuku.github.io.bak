@@ -7,6 +7,10 @@
     color: #137E71;
 }
 
+.purple {
+    color: 614585;
+}
+
 .bg-teal {
     background-color: #98d1ca;
 }
@@ -17,6 +21,10 @@
 
 .bg-black {
     background-color: #353333;;
+}
+
+.bg-purple {
+    background-color: #614585;
 }
 
 .black {
@@ -129,13 +137,7 @@
     color: white;
     width: 121px;
     height: 43px;
-    border: 4px solid white;
     border-radius: 90px;
-}
-
-.pillButton:hover {
-    background-color: red;
-    border-color: red;
 }
 
 .pillLabel {
@@ -216,7 +218,7 @@
 .landingButtons {
     display: grid;
     justify-self: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 20px;
 }
 
